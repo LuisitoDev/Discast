@@ -1,0 +1,4 @@
+#backgroundImage {
+  background-image: url("/project/front/images/signupBackground.jpg");
+  background-size: cover;
+}

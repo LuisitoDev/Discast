@@ -1,0 +1,5 @@
+.headerAudioPlayerContainer .rhap_play-pause-button{
+    width: fit-content;
+    height: fit-content;
+    overflow: visible;
+}

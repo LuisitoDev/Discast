@@ -1,0 +1,82 @@
+/*Estos estilos corresponden al modal de editar perfil*/
+
+.userImageContainer{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.userImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
+    object-fit: cover;
+}
+
+.overlay{
+    width: 150px;
+    height: 150px;
+    background: #0477bf;
+    border-radius: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.paragraphContainer:hover ~ .overlay{
+    opacity: .5;
+}
+
+.paragraphContainer{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.paragraphContainer:hover{
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px){
+    .userImageContainer{
+        width: 175px;
+        height: 175px;
+    }
+
+    .overlay{
+        width: 175px;
+        height: 175px;
+    }
+
+    .userImage{
+        width: 175px;
+        height: 175px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .userImageContainer{
+        width: 200px;
+        height: 200px;
+    }
+
+    .overlay{
+        width: 200px;
+        height: 200px;
+    }
+
+    .userImage{
+        width: 200px;
+        height: 200px;
+    }
+}

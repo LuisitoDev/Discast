@@ -1,0 +1,25 @@
+/* ------------------------ Navbar ------------------------- */
+
+/* Este media query, cambia el width del input del buscador del navbar, no hay una clase en bootstrap que lo haga por lo que lo hice aquí */
+
+.inputBuscadorNavbar{
+    width: 100%;
+}
+
+.user-link{
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .inputBuscadorNavbar {
+        width: 50%;
+    }
+}
+
+/* ------------------- Tabs de filtros --------------------- */
+
+/* Este estilo cambia el valor de la transición en los nav-links que son hijos de nav-tabs, 
+   se aplicó aquí ya que en el scss ya había un valor usandose en otro lugar por lo que es específico solo para el header */
+.nav-tabs .nav-link{
+    transition: background-color .5s ease;
+}

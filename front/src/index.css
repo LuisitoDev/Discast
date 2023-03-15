@@ -1,0 +1,82 @@
+body {
+    background: rgb(19, 21, 32);
+}
+
+/* #root {
+  padding-bottom: 120px;
+} */
+
+.mainBackground {
+    background: rgb(19, 21, 32);
+    background: linear-gradient(
+      98deg,
+      rgba(19, 21, 32, 1) 0%,
+      rgba(21, 23, 35, 1) 46%,
+      rgba(21, 23, 35, 1) 61%,
+      rgba(13, 14, 21, 1) 100%
+    );
+  }
+  
+  .podcastCard {
+    background: rgb(45, 47, 59);
+    background: linear-gradient(
+      90deg,
+      #2d2f3b 0%,
+      #22232e 46%,
+      #242530 61%,
+      #292b36 100%
+    );
+    border-radius: 10px;
+    border: 3px solid #42444e;
+    transition: border 300ms ease-in-out, transform 300ms ease;
+    cursor: pointer;
+  }
+  .podcastCard:hover {
+    border: 4px solid #c4c5c7;
+    transform: scale(1.005);
+  }
+  
+  .podcastCard .btnPlayPodcast {
+    transition: all ease-in-out .15s;
+    font-weight: lighter;
+    background: none;
+    color: inherit;
+    border-radius: 1em;
+  }
+
+  .podcastCard .btnPlayPodcast:hover {
+    /* color: #0477bf; */
+    background-color: #0477bf;
+    border-color: #0477bf !important;
+    transform: scale(1.009);
+  }
+
+  .rhap_progress-section {
+    justify-content: space-between;
+  }
+
+  .podcast-info-player a:hover {
+    text-decoration-color: #fff !important;
+  }
+
+  .podcast-title-link:hover {
+    /* text-decoration: underline !important;  */
+    text-decoration-color: #fff !important;
+    
+  }
+
+*::-webkit-scrollbar {
+    width: 12px; /* Mostly for vertical scrollbars */
+    height: 12px; /* Mostly for horizontal scrollbars */
+}
+*::-webkit-scrollbar-thumb { /* Foreground */
+    background: #0477bfd5;    
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-track { /* Background */
+    background: #0477bf46;
+}
+*::-webkit-scrollbar-track-piece {
+    background: #0477bf46;
+    border-radius: 10px;
+}

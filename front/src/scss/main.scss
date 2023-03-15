@@ -1,0 +1,53 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+/*Aqui se cambian los estilos de bootstrap del proyecto, por el momento solo se tiene uno
+genérico pero se pueden cambiar por más con 
+el comando sass --watch "archivo sass" "archivo css" */
+
+$dark: #262626;
+$primary: #0477bf;
+$white: #f2f2f2;
+$danger: #dc3545;
+$secondary: #6f7377;
+
+/*ESTILIZADO DE COLORES BASICO*/
+$theme-colors: (
+  "primary": $primary,
+  "dark": $dark,
+  "danger": $danger,
+  "secondary": $secondary
+);
+
+/*ESTILIZADO DE NAVS AND TABS DEL LOGIN Y REGISTRO*/
+
+//TAB INACTIVA
+
+$nav-link-color: $white;
+$nav-link-hover-color: $white;
+$nav-link-transition: color 0.25s ease-in-out, background-color 0.1s ease-in-out,
+  border-color 0.8s ease-in-out;
+$nav-tabs-border-color: $primary !default;
+//TAB ACTIVA
+$nav-pills-link-active-color: $white;
+$nav-pills-link-active-bg: $primary;
+
+//NAV TABS
+$nav-tabs-link-hover-border-color: $primary;
+$nav-tabs-link-active-bg: $primary;
+$nav-tabs-link-active-border-color: $primary;
+$nav-tabs-link-active-color: $white;
+
+//Thumbnail de imagen
+$thumbnail-padding: 0.25rem;
+$thumbnail-bg: $primary;
+
+$thumbnail-border-color: $primary;
+//MODAL
+$modal-content-bg: $dark;
+$btn-close-color: $white;
+$modal-footer-border-width: none;
+$modal-header-border-width: none;
+
+//TODO revisar esto porque puede fallat en host
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

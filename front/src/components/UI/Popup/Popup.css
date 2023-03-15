@@ -1,0 +1,70 @@
+/* Pop up */
+
+.addFriendButton{
+    width:min-content;
+    height: min-content;
+    border-radius: 100px;
+    padding: 7px 9px;
+}
+
+.profileImagePopup {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+
+    padding: 0;
+    background: none;
+    border: 5px solid #0477bf;
+    object-fit: cover;
+}
+
+.profileImagePlaceholderPopup {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    
+    padding: 0;
+    background: none;
+    border: 5px solid #0477bf;
+    object-fit: contain;
+}
+
+.userImageContainer {
+    height: fit-content;
+}
+
+[role='tooltip'].popup-content {
+    background: #262626;
+    border: none;
+    padding: 15px;
+    width: 270px;
+    overflow-wrap: break-word;
+    box-shadow: rgba(4, 119, 190, 0.286) 0px 0px 10px;
+    z-index: 9999 !important;
+    animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.popup-arrow {
+    color: #262626;
+    stroke: #262626;
+}
+
+/* animation */
+
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(4, 119, 190, 0);
+    }
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(4, 119, 190, 0);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(4, 119, 190, 0.425);
+    }
+}

@@ -1,0 +1,36 @@
+#playBtn {
+  transition: color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+#playBtn:hover {
+  cursor: pointer;
+  color: #0477bf;
+  transform: scale(1.1);
+}
+
+body {
+  background: linear-gradient(45deg, #242323, #1a1515, #252525, #242323);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+.vl {
+  border-left: 1px solid #0477bf;
+}
+.h1 {
+  width: 100%;
+  border: 1px solid #0477bf;
+}
+.v2 {
+  border-right: 1px solid #0477bf;
+}
+@keyframes gradient {
+  25% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

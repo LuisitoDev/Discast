@@ -1,0 +1,9 @@
+node_modules/
+project/front/css/main
+front/src/main-bootstrap.*
+back/build
+back/logs.txt
+back/Recursos
+package-lock.json
+back/package-lock.json
+front/package-lock.json

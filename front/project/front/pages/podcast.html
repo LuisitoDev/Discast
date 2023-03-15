@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/project/front/css/main/main-bootstrap.css" />
+    <link rel="stylesheet" href="/project/front/css/header/header.css" />
+    <link rel="stylesheet" href="/project/front/css/podcast/podcast.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Podcast</title>
+  </head>
+
+  <body class="vh-100 bg-dark text-white">
+    <header>
+      <!-- Se compone de un navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-headset fs-2 me-1"></i>
+            <span class="navbar-brand mb-0 h1 fs-3">Discast</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <form
+              class="d-flex flex-lg-grow-1 flex-grow-0 justify-content-lg-center mx-lg-5"
+            >
+              <input
+                class="form-control me-2 inputBuscadorNavbar"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="fas fa-search fs-4 text-white"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav my-2">
+              <li class="nav-item px-2">
+                <a class="nav-link fs-5" href="#">
+                  <i class="fas fa-upload fs-2"></i>
+                  <span class="d-lg-none d-inline-block ms-2">Upload</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fs-5" href="#">
+                  <i class="fas fa-user fs-2"></i>
+                  <span class="d-lg-none d-inline-block ms-2">Derek Bryan</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="row container-fluid p-0 m-0">
+      <!-- Parte izquierda de la pantalla que compone el podcast -->
+      <div class="col-9">
+        <!-- Esta row compone la parte superior de la parte izquierda que es el botón de play y el botón de opinar  -->
+        <div class="row py-3 border-1 border-white border-bottom mb-3">
+          <div class="col-6 d-flex justify-content-center">
+            <i id="playBtn" class="fas fa-play-circle display-3 p-3"></i>
+          </div>
+          <div class="col-6 d-flex align-items-center">
+            <button class="btn btn-primary w-75 text-white fs-4 p-2">
+              Opinar
+            </button>
+          </div>
+        </div>
+        
+        <!-- Esta row compone la parte superior de la parte izquierda que es el botón de play y el botón de opinar  -->
+
+        <div class="row mb-5">
+          <div class="col-10 mx-auto">
+            <h1 class="text-white text-center">Esta es el titulo de mi polemica</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-10 mx-auto border border-3 border-primary p-5"
+            style="background: rgb(15, 16, 19); border-radius: 10px"
+          >
+            <div class="row">
+              <!-- En este div empieza la carta -->
+              <div
+                class="col-2 d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="vl flex-grow-1"></div>
+                <img
+                  src="../images/podcast/person2.jpg"
+                  alt="userImage"
+                  style="height: 150px; width: 150px; border-radius: 100%"
+                  class="img-fluid img-thumbnail"
+                />
+                <div class="vl flex-grow-1"></div>
+              </div>
+
+              <div
+                class="col-10 p-5 border border-3 border-primary my-4"
+                style="border-radius: 10px"
+              >
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <div class="row mb-2 w-100">
+                  <div class="col-12 d-flex justify-content-between">
+                    <h4>Sonia Rodriguez</h4>
+                    <span>Hace unos segundos </span>
+                  </div>
+                </div>
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <!-- Zona de reproductor, por el momento incompleta  -->
+                <div class="row mb-4 p-0">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-between"
+                  >
+                    <i class="fas fa-play display-4"></i>
+                    <div class="w-75">
+                      <hr />
+                    </div>
+                    <span>4:57</span>
+                  </div>
+                </div>
+                <!-- Zona de reproductor por el momento incompleta  -->
+                <div class="row">
+                  <div class="col-12 fs-5 d-flex justify-content-between">
+                    <span class="me-2">122133 Reproducciones</span>
+
+                    <span class="me-2"
+                      >122133 <i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- En este div empieza la carta -->
+              <div
+                class="col-2 d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="vl flex-grow-1"></div>
+                <img
+                  src="../images/podcast/person2.jpg"
+                  alt="userImage"
+                  style="height: 150px; width: 150px; border-radius: 100%"
+                  class="img-fluid img-thumbnail"
+                />
+                <div class="vl flex-grow-1"></div>
+              </div>
+
+              <div
+                class="col-10 p-5 border border-3 border-primary my-4"
+                style="border-radius: 10px"
+              >
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <div class="row mb-2 w-100">
+                  <div class="col-12 d-flex justify-content-between">
+                    <h4>Sonia Rodriguez</h4>
+                    <span>Hace unos segundos </span>
+                  </div>
+                </div>
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <!-- Zona de reproductor, por el momento incompleta  -->
+                <div class="row mb-4 p-0">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-between"
+                  >
+                    <i class="fas fa-play display-4"></i>
+                    <div class="w-75">
+                      <hr />
+                    </div>
+                    <span>4:57</span>
+                  </div>
+                </div>
+                <!-- Zona de reproductor por el momento incompleta  -->
+                <div class="row">
+                  <div class="col-12 fs-5 d-flex justify-content-between">
+                    <span class="me-2">122133 Reproducciones</span>
+
+                    <span class="me-2"
+                      >122133 <i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aqui se va a poner una respuesta como prueba -->
+
+            <div class="row">
+              <!-- En este div empieza la carta -->
+              <div class="col-1 p-0 d-flex justify-content-end">
+                <div class="v2 flex-grow"></div>
+              </div>
+              <div class="col-1 p-0 d-flex align-items-center">
+                <div class="h1"></div>
+              </div>
+              <div
+                class="col-2 p-0 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="../images/podcast/person1.jpg"
+                  alt="userImage"
+                  style="height: 150px; width: 150px; border-radius: 100%"
+                  class="img-thumbnail"
+                />
+              </div>
+
+              <div
+                class="col-8 p-5 border border-4 border-primary my-4"
+                style="border-radius: 10px"
+              >
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <div class="row mb-2 p-0 w-100">
+                  <div class="col-12 d-flex justify-content-between">
+                    <h4>Derek Figon</h4>
+                    <span>Hace unos segundos</span>
+                  </div>
+                </div>
+                <!-- Zona de nombre de usuario y tiempo en el que se hizo la publicacion del audio  -->
+
+                <!-- Zona de reproductor, por el momento incompleta  -->
+                <div class="row mb-4 p-0">
+                  <div
+                    class="col-12 d-flex align-items-center justify-content-between"
+                  >
+                    <i class="fas fa-play display-4"></i>
+                    <div class="w-75">
+                      <hr />
+                    </div>
+                    <span>4:57</span>
+                  </div>
+                </div>
+                <!-- Zona de reproductor por el momento incompleta  -->
+                <div class="row">
+                  <div class="col-12 fs-5 d-flex justify-content-between">
+                    <span class="me-2">122133 Reproducciones</span>
+
+                    <span class="me-2"
+                      >122133 <i class="fas fa-heart"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Aqui se va a poner una respuesta como prueba -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Parte izquierda de la pantalla que compone el podcast -->
+
+      <!-- Parte derecha de la pantalla  -->
+      <div class="col-3 border border-3 border-end-0 pb-5 sticky-top" style="overflow-y: scroll; max-height: 100vh ;">
+        <h1 class="p-3 text-center display-2">Inbox</h1>
+      <!-- Aqui empieza una carta -->
+        <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person1.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta --> <!-- Aqui empieza una carta -->
+        <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person1.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/person3.jpg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+         <!-- Aqui empieza una carta -->
+         <div class="row mb-3 pb-4">
+          <div class="col-3">
+            <img
+              src="../images/podcast/pikachu.jpeg"
+              class="img-thumbnail img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-9 d-flex p-0">
+            <i class="fas fa-play fs-2 me-2"></i>
+            <div>
+              <p>
+                ¿Porque crees que esa es la razon de la polemica?
+              </p>
+              <div class="d-flex">
+              <div class="me-5">
+                <i class="far fa-thumbs-up me-2"></i><span>15</span>
+              </div>
+              <div>
+                <i class="far fa-thumbs-down me-2"></i></i><span>15</span>
+              </div>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui termina una carta -->
+      </div>
+
+      <!-- Parte derecha de la pantalla  -->
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>

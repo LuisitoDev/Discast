@@ -1,0 +1,80 @@
+#playBtn {
+  transition: color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+#playBtn:hover {
+  cursor: pointer;
+  color: #0477bf;
+  transform: scale(1.1);
+}
+
+.vl {
+  border-left: 1px solid #0477bf;
+}
+.h1 {
+  width: 100%;
+  border: 1px solid #0477bf;
+}
+.v2 {
+  border-right: 1px solid #0477bf;
+}
+
+.profileImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  cursor: pointer;
+
+  padding: 0;
+  background: none;
+  border: 5px solid #0477bf;
+  object-fit: cover;
+}
+
+.profileImagePlaceholder{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: none;
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+
+  padding: 0;
+  background: none;
+  border: 5px solid #0477bf;
+  object-fit: contain;
+}
+
+.profileInboxImage {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  padding: 0;
+  background: none;
+  border: 5px solid #0477bf;
+  object-fit: cover;
+}
+
+.profileInboxImagePlaceholder {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  padding: 0;
+  background: none;
+  border: 5px solid #0477bf;
+  object-fit: contain;
+}
+
+.timeline-background,
+.comments-background {
+  background: #0f1013;
+  border-radius: 10px;
+}
+.sandwichButton {
+  cursor: pointer;
+  z-index: 30000;
+  transition: .3s all ease-in-out;
+}

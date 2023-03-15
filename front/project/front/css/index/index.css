@@ -1,0 +1,29 @@
+.mainBackground {
+  background: rgb(19, 21, 32);
+  background: linear-gradient(
+    98deg,
+    rgba(19, 21, 32, 1) 0%,
+    rgba(21, 23, 35, 1) 46%,
+    rgba(21, 23, 35, 1) 61%,
+    rgba(13, 14, 21, 1) 100%
+  );
+}
+
+.podcastCard {
+  background: rgb(45, 47, 59);
+  background: linear-gradient(
+    90deg,
+    #2d2f3b 0%,
+    #22232e 46%,
+    #242530 61%,
+    #292b36 100%
+  );
+  border-radius: 10px;
+  border: 3px solid #42444e;
+  transition: border 300ms ease-in-out, transform 300ms ease;
+  cursor: pointer;
+}
+.podcastCard:hover {
+  border: 4px solid #c4c5c7;
+  transform: scale(1.005);
+}

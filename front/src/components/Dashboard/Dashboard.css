@@ -1,0 +1,40 @@
+.cardBackground{
+    background: #0f1013;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px 1px #0477bf;
+}
+
+.dashboard-text{
+    font-size: 3.5em;
+}
+
+.PodcastStatsContainer{
+    overflow: auto;
+    scrollbar-color: #0477bf46 #0477bfd5;
+}
+
+.link>a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.link>a:hover{
+    text-decoration: underline !important;
+}
+
+.btn-action-podcast {
+    background: #0477bf;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+.btn-action-podcast:hover {
+    color: #0577be;
+    background-color: #fff;
+}
+
+.podcast-column .podcast-row:nth-child(odd){
+    background: #034d7a;
+}

@@ -1,0 +1,11 @@
+.editButton {
+  color: red;
+  cursor: pointer;
+  transition: transform 100ms ease-in-out;
+}
+.editButton:hover {
+  transform: scale(1.15);
+}
+.editComment:focus {
+  border: none;
+}

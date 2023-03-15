@@ -1,0 +1,147 @@
+<!--Esta página solo se realizó para crear el header-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/project/front/css/main/main-bootstrap.css" />
+    <link rel="stylesheet" href="/project/front/css/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="/project/front/css/createPodcast/createPodcast.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8195de2409.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Create Podcast</title>
+  </head>
+  <!--Aqui empieza el header-->
+  <header>
+    <!-- Se compone de un navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-headset fs-2 me-1"></i>
+          <span class="navbar-brand mb-0 h1 fs-3">Discast</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mt-4 mt-lg-0"
+          id="navbarSupportedContent"
+        >
+          <form
+            class="d-flex flex-lg-grow-1 flex-grow-0 justify-content-lg-center mx-lg-5"
+          >
+            <input
+              class="form-control me-2 inputBuscadorNavbar"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fas fa-search fs-4 text-white"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav my-2">
+            <li class="nav-item px-2">
+              <a class="nav-link fs-5" href="#">
+                <i class="fas fa-upload fs-2"></i>
+                <span class="d-lg-none d-inline-block ms-2">Upload</span>
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link fs-5" href="#">
+                <i class="fas fa-user fs-2"></i>
+                <span class="d-lg-none d-inline-block ms-2">Derek Bryan</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body class="min-vh-100 bg-dark text-white">
+    <div class="container-fluid">
+      <div class="row justify-content-center p-3">
+        <div
+          class="my-2 my-md-5 col-12 col-md-10 col-lg-6 col-xxl-4 uploadPodcastContainer p-3 p-md-5"
+        >
+          <form action="" method="post" enctype="multipart/form-data">
+            <h1 class="mb-4 uploadPodcastTitle border-bottom pb-3">
+              Subir Podcast
+            </h1>
+            <div class="mb-3 mb-md-4">
+              <label for="titleInputCreatePodcast" class="form-label"
+                >Título del podcast</label
+              >
+              <input
+                type="text"
+                name="podcastTitle"
+                class="form-control w-100"
+                id="titleInputCreatePodcast"
+              />
+            </div>
+            <div class="mb-3 mb-md-5 d-flex flex-column justify-content-center">
+              <!-- TODO: Aqui nada mas falta ver como se manejará el mostrar una imagen a partir de que el usuario sube un archivo con REACT-->
+              <img
+                class="podcastImage img-fluid rounded-3 mb-3 mb-md-4"
+                src="https://images.pexels.com/photos/6954162/pexels-photo-6954162.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt=""
+              />
+              <input
+                type="file"
+                name="podcastImage"
+                id="podcastImageInput"
+                class="d-none"
+                accept="image/*"
+              />
+              <label
+                for="podcastImageInput"
+                class="btn btn-primary text-white mx-auto px-5 py-2"
+                >Subir foto</label
+              >
+            </div>
+            <div class="mb-3 mb-md-4 d-flex flex-column flex-md-row">
+              <p class="col-md-6 align-self-md-center">
+                ¿Quién puede responder?
+              </p>
+              <select
+                class="form-select mb-3"
+                name="privacySelect"
+                aria-label=".form-select-lg example"
+              >
+                <option value="1">Todos</option>
+                <option value="2">Amigos</option>
+                <option value="3">Ninguno</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <button
+                class="btn btn-primary text-white mx-auto d-block px-5 py-2"
+              >
+                Siguiente
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>

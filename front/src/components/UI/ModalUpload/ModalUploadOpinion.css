@@ -1,0 +1,35 @@
+/* Cree una flecha a partir de los bordes de un cuadrado, para mas informacion visitar este link https://css-tricks.com/snippets/css/css-triangle/ */
+
+.arrowUp {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-bottom: 15px solid #0477bf;
+}
+
+@media (min-width: 768px) {
+    
+    .contentBorderContainer {
+        border: 3px solid #0477bf;
+    }
+    
+}
+
+/* Este estilo y este media query corresponde al trim de audio que es dummy por lo tanto se tiene que borrar cuando se tenga el plugin de react*/
+
+.waveDummy{
+    width: 50px; 
+    height: 50px;
+}
+
+@media (min-width: 992px) {
+
+    .waveDummy{
+        width: 100px; 
+        height: 100px;
+    }
+    
+    
+}
